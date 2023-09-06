@@ -1,0 +1,8 @@
+The scikit-learn version is 0.17.
+
+['Settings', 'Languages', 'F1 Score (Macro)'] ['zero_shot', 'EN', 0.69975898968475858] ['zero_shot', 'PT', 0.52274916628431933] ['zero_shot', 'GL', 0.30423445473596644] ['zero_shot', 'EN,PT,GL', 0.52588774690136308] ['one_shot', 'EN', (None, None, None)] ['one_shot', 'PT', (None, None, None)] ['one_shot', 'GL', (None, None, None)] ['one_shot', 'EN,PT,GL', (None, None, None)]
+
+Results B is None
+Score outputs:
+scorea1: 0.525887746901
+

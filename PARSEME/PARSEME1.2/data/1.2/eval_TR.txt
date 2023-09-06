@@ -1,0 +1,39 @@
+## Global evaluation
+* MWE-based: P=840/1247=0.6736 R=840/1151=0.7298 F=0.7006
+* Tok-based: P=1762/2535=0.6951 R=1762/2387=0.7382 F=0.7160
+
+## Per-category evaluation (partition of Global)
+* LVC.full: MWE-proportion: gold=546/1151=47% pred=579/1247=46%
+* LVC.full: MWE-based: P=414/579=0.7150 R=414/546=0.7582 F=0.7360
+* LVC.full: Tok-based: P=847/1159=0.7308 R=847/1103=0.7679 F=0.7489
+* MVC: MWE-proportion: gold=1/1151=0% pred=0/1247=0%
+* MVC: MWE-based: P=0/0=0.0000 R=0/1=0.0000 F=0.0000
+* MVC: Tok-based: P=0/0=0.0000 R=0/2=0.0000 F=0.0000
+* VID: MWE-proportion: gold=604/1151=52% pred=668/1247=54%
+* VID: MWE-based: P=414/668=0.6198 R=414/604=0.6854 F=0.6509
+* VID: Tok-based: P=886/1376=0.6439 R=886/1282=0.6911 F=0.6667
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=1102/1151=96% pred=1216/1247=98%
+* Continuous: MWE-based: P=825/1216=0.6785 R=825/1102=0.7486 F=0.7118
+* Discontinuous: MWE-proportion: gold=49/1151=4% pred=31/1247=2%
+* Discontinuous: MWE-based: P=15/31=0.4839 R=15/49=0.3061 F=0.3750
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=1150/1151=100% pred=1218/1247=98%
+* Multi-token: MWE-based: P=840/1218=0.6897 R=840/1150=0.7304 F=0.7095
+* Single-token: MWE-proportion: gold=1/1151=0% pred=29/1247=2%
+* Single-token: MWE-based: P=0/29=0.0000 R=0/1=0.0000 F=0.0000
+
+## Whether seen in train (partition of Global)
+* Seen-in-train: MWE-proportion: gold=851/1151=74% pred=900/1247=72%
+* Seen-in-train: MWE-based: P=701/900=0.7789 R=701/851=0.8237 F=0.8007
+* Unseen-in-train: MWE-proportion: gold=300/1151=26% pred=347/1247=28%
+* Unseen-in-train: MWE-based: P=139/347=0.4006 R=139/300=0.4633 F=0.4297
+
+## Whether identical to train (partition of Seen-in-train)
+* Variant-of-train: MWE-proportion: gold=494/851=58% pred=488/900=54%
+* Variant-of-train: MWE-based: P=366/488=0.7500 R=366/494=0.7409 F=0.7454
+* Identical-to-train: MWE-proportion: gold=357/851=42% pred=412/900=46%
+* Identical-to-train: MWE-based: P=335/412=0.8131 R=335/357=0.9384 F=0.8713
+

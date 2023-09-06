@@ -1,0 +1,39 @@
+## Global evaluation
+* MWE-based: P=812/1187=0.6841 R=812/1151=0.7055 F=0.6946
+* Tok-based: P=1705/2423=0.7037 R=1705/2387=0.7143 F=0.7089
+
+## Per-category evaluation (partition of Global)
+* LVC.full: MWE-proportion: gold=546/1151=47% pred=558/1187=47%
+* LVC.full: MWE-based: P=399/558=0.7151 R=399/546=0.7308 F=0.7228
+* LVC.full: Tok-based: P=819/1117=0.7332 R=819/1103=0.7425 F=0.7378
+* MVC: MWE-proportion: gold=1/1151=0% pred=0/1187=0%
+* MVC: MWE-based: P=0/0=0.0000 R=0/1=0.0000 F=0.0000
+* MVC: Tok-based: P=0/0=0.0000 R=0/2=0.0000 F=0.0000
+* VID: MWE-proportion: gold=604/1151=52% pred=629/1187=53%
+* VID: MWE-based: P=399/629=0.6343 R=399/604=0.6606 F=0.6472
+* VID: Tok-based: P=856/1306=0.6554 R=856/1282=0.6677 F=0.6615
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=1102/1151=96% pred=1163/1187=98%
+* Continuous: MWE-based: P=801/1163=0.6887 R=801/1102=0.7269 F=0.7073
+* Discontinuous: MWE-proportion: gold=49/1151=4% pred=24/1187=2%
+* Discontinuous: MWE-based: P=11/24=0.4583 R=11/49=0.2245 F=0.3014
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=1150/1151=100% pred=1163/1187=98%
+* Multi-token: MWE-based: P=812/1163=0.6982 R=812/1150=0.7061 F=0.7021
+* Single-token: MWE-proportion: gold=1/1151=0% pred=24/1187=2%
+* Single-token: MWE-based: P=0/24=0.0000 R=0/1=0.0000 F=0.0000
+
+## Whether seen in train (partition of Global)
+* Seen-in-traindev: MWE-proportion: gold=851/1151=74% pred=864/1187=73%
+* Seen-in-traindev: MWE-based: P=676/864=0.7824 R=676/851=0.7944 F=0.7883
+* Unseen-in-traindev: MWE-proportion: gold=300/1151=26% pred=323/1187=27%
+* Unseen-in-traindev: MWE-based: P=136/323=0.4211 R=136/300=0.4533 F=0.4366
+
+## Whether identical to train (partition of Seen-in-traindev)
+* Variant-of-traindev: MWE-proportion: gold=494/851=58% pred=464/864=54%
+* Variant-of-traindev: MWE-based: P=352/464=0.7586 R=352/494=0.7126 F=0.7349
+* Identical-to-traindev: MWE-proportion: gold=357/851=42% pred=400/864=46%
+* Identical-to-traindev: MWE-based: P=324/400=0.8100 R=324/357=0.9076 F=0.8560
+

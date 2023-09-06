@@ -1,0 +1,39 @@
+## Global evaluation
+* MWE-based: P=1446/1739=0.8315 R=1446/2020=0.7158 F=0.7694
+* Tok-based: P=2950/3509=0.8407 R=2950/4094=0.7206 F=0.7760
+
+## Per-category evaluation (partition of Global)
+* LVC.cause: MWE-proportion: gold=106/2020=5% pred=86/1739=5%
+* LVC.cause: MWE-based: P=69/86=0.8023 R=69/106=0.6509 F=0.7188
+* LVC.cause: Tok-based: P=139/172=0.8081 R=139/212=0.6557 F=0.7240
+* LVC.full: MWE-proportion: gold=1508/2020=75% pred=1323/1739=76%
+* LVC.full: MWE-based: P=1083/1323=0.8186 R=1083/1508=0.7182 F=0.7651
+* LVC.full: Tok-based: P=2198/2660=0.8263 R=2198/3029=0.7257 F=0.7727
+* VID: MWE-proportion: gold=406/2020=20% pred=330/1739=19%
+* VID: MWE-based: P=265/330=0.8030 R=265/406=0.6527 F=0.7201
+* VID: Tok-based: P=545/677=0.8050 R=545/853=0.6389 F=0.7124
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=1606/2020=80% pred=1406/1739=81%
+* Continuous: MWE-based: P=1227/1406=0.8727 R=1227/1606=0.7640 F=0.8147
+* Discontinuous: MWE-proportion: gold=414/2020=20% pred=333/1739=19%
+* Discontinuous: MWE-based: P=219/333=0.6577 R=219/414=0.5290 F=0.5863
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=2020/2020=100% pred=1739/1739=100%
+* Multi-token: MWE-based: P=1446/1739=0.8315 R=1446/2020=0.7158 F=0.7694
+* Single-token: MWE-proportion: gold=0/2020=0% pred=0/1739=0%
+* Single-token: MWE-based: P=0/0=0.0000 R=0/0=0.0000 F=0.0000
+
+## Whether seen in train (partition of Global)
+* Seen-in-traindev: MWE-proportion: gold=1720/2020=85% pred=1739/1739=100%
+* Seen-in-traindev: MWE-based: P=1446/1739=0.8315 R=1446/1720=0.8407 F=0.8361
+* Unseen-in-traindev: MWE-proportion: gold=300/2020=15% pred=0/1739=0%
+* Unseen-in-traindev: MWE-based: P=0/0=0.0000 R=0/300=0.0000 F=0.0000
+
+## Whether identical to train (partition of Seen-in-traindev)
+* Variant-of-traindev: MWE-proportion: gold=830/1720=48% pred=901/1739=52%
+* Variant-of-traindev: MWE-based: P=630/901=0.6992 R=630/830=0.7590 F=0.7279
+* Identical-to-traindev: MWE-proportion: gold=890/1720=52% pred=838/1739=48%
+* Identical-to-traindev: MWE-based: P=816/838=0.9737 R=816/890=0.9169 F=0.9444
+

@@ -1,0 +1,39 @@
+## Global evaluation
+* MWE-based: P=752/1219=0.6169 R=752/1151=0.6533 F=0.6346
+* Tok-based: P=1568/2485=0.6310 R=1568/2387=0.6569 F=0.6437
+
+## Per-category evaluation (partition of Global)
+* LVC.full: MWE-proportion: gold=546/1151=47% pred=598/1219=49%
+* LVC.full: MWE-based: P=358/598=0.5987 R=358/546=0.6557 F=0.6259
+* LVC.full: Tok-based: P=735/1210=0.6074 R=735/1103=0.6664 F=0.6355
+* MVC: MWE-proportion: gold=1/1151=0% pred=1/1219=0%
+* MVC: MWE-based: P=1/1=1.0000 R=1/1=1.0000 F=1.0000
+* MVC: Tok-based: P=2/2=1.0000 R=2/2=1.0000 F=1.0000
+* VID: MWE-proportion: gold=604/1151=52% pred=620/1219=51%
+* VID: MWE-based: P=383/620=0.6177 R=383/604=0.6341 F=0.6258
+* VID: Tok-based: P=806/1273=0.6332 R=806/1282=0.6287 F=0.6309
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=1102/1151=96% pred=1154/1219=95%
+* Continuous: MWE-based: P=735/1154=0.6369 R=735/1102=0.6670 F=0.6516
+* Discontinuous: MWE-proportion: gold=49/1151=4% pred=65/1219=5%
+* Discontinuous: MWE-based: P=17/65=0.2615 R=17/49=0.3469 F=0.2982
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=1150/1151=100% pred=1219/1219=100%
+* Multi-token: MWE-based: P=752/1219=0.6169 R=752/1150=0.6539 F=0.6349
+* Single-token: MWE-proportion: gold=1/1151=0% pred=0/1219=0%
+* Single-token: MWE-based: P=0/0=0.0000 R=0/1=0.0000 F=0.0000
+
+## Whether seen in train (partition of Global)
+* Seen-in-traindev: MWE-proportion: gold=851/1151=74% pred=1213/1219=100%
+* Seen-in-traindev: MWE-based: P=750/1213=0.6183 R=750/851=0.8813 F=0.7267
+* Unseen-in-traindev: MWE-proportion: gold=300/1151=26% pred=6/1219=0%
+* Unseen-in-traindev: MWE-based: P=2/6=0.3333 R=2/300=0.0067 F=0.0131
+
+## Whether identical to train (partition of Seen-in-traindev)
+* Variant-of-traindev: MWE-proportion: gold=494/851=58% pred=789/1213=65%
+* Variant-of-traindev: MWE-based: P=424/789=0.5374 R=424/494=0.8583 F=0.6610
+* Identical-to-traindev: MWE-proportion: gold=357/851=42% pred=424/1213=35%
+* Identical-to-traindev: MWE-based: P=326/424=0.7689 R=326/357=0.9132 F=0.8348
+

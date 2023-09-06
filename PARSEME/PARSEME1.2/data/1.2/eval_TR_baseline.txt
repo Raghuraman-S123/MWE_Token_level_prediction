@@ -1,0 +1,39 @@
+## Global evaluation
+* MWE-based: P=34/46441=0.0007 R=34/1151=0.0295 F=0.0014
+* Tok-based: P=2387/49588=0.0481 R=2387/2387=1.0000 F=0.0919
+
+## Per-category evaluation (partition of Global)
+* LVC.full: MWE-proportion: gold=546/1151=47% pred=17/46441=0%
+* LVC.full: MWE-based: P=17/17=1.0000 R=17/546=0.0311 F=0.0604
+* LVC.full: Tok-based: P=34/34=1.0000 R=34/1103=0.0308 F=0.0598
+* MVC: MWE-proportion: gold=1/1151=0% pred=0/46441=0%
+* MVC: MWE-based: P=0/0=0.0000 R=0/1=0.0000 F=0.0000
+* MVC: Tok-based: P=0/0=0.0000 R=0/2=0.0000 F=0.0000
+* VID: MWE-proportion: gold=604/1151=52% pred=46424/46441=100%
+* VID: MWE-based: P=17/46424=0.0004 R=17/604=0.0281 F=0.0007
+* VID: Tok-based: P=1282/49554=0.0259 R=1282/1282=1.0000 F=0.0504
+
+## MWE continuity (partition of Global)
+* Continuous: MWE-proportion: gold=1102/1151=96% pred=45355/46441=98%
+* Continuous: MWE-based: P=33/45355=0.0007 R=33/1102=0.0299 F=0.0014
+* Discontinuous: MWE-proportion: gold=49/1151=4% pred=1086/46441=2%
+* Discontinuous: MWE-based: P=1/1086=0.0009 R=1/49=0.0204 F=0.0018
+
+## Number of tokens (partition of Global)
+* Multi-token: MWE-proportion: gold=1150/1151=100% pred=1920/46441=4%
+* Multi-token: MWE-based: P=34/1920=0.0177 R=34/1150=0.0296 F=0.0221
+* Single-token: MWE-proportion: gold=1/1151=0% pred=44521/46441=96%
+* Single-token: MWE-based: P=0/44521=0.0000 R=0/1=0.0000 F=0.0000
+
+## Whether seen in train (partition of Global)
+* Seen-in-train: MWE-proportion: gold=851/1151=74% pred=26/46441=0%
+* Seen-in-train: MWE-based: P=20/26=0.7692 R=20/851=0.0235 F=0.0456
+* Unseen-in-train: MWE-proportion: gold=300/1151=26% pred=46415/46441=100%
+* Unseen-in-train: MWE-based: P=14/46415=0.0003 R=14/300=0.0467 F=0.0006
+
+## Whether identical to train (partition of Seen-in-train)
+* Variant-of-train: MWE-proportion: gold=494/851=58% pred=17/26=65%
+* Variant-of-train: MWE-based: P=11/17=0.6471 R=11/494=0.0223 F=0.0431
+* Identical-to-train: MWE-proportion: gold=357/851=42% pred=9/26=35%
+* Identical-to-train: MWE-based: P=9/9=1.0000 R=9/357=0.0252 F=0.0492
+
